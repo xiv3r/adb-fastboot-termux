@@ -1,8 +1,9 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
+echo "Installing ADB and FASTBOOT"
 apt update
 apt upgrade -y
-apt install wget gnupg coreutils -y
+apt install gnupg coreutils -y
 ### configure nohajc.gpg
 mkdir -p $PREFIX/etc/apt/sources.list.d
 cat > $PREFIX/etc/apt/sources.list.d/termux-adb.list << EOF
@@ -12,8 +13,8 @@ EOF
 wget -O $PREFIX/etc/apt/trusted.gpg.d/nohajc.gpg https://nohajc.github.io/nohajc.gpg
 ### update new repo
 apt update
-apt install termux-adb
+apt install termux-adb -y
 ### symlinks
 ln -sf $PREFIX/bin/termux-fastboot $PREFIX/bin/fastboot && ln -sf $PREFIX/bin/termux-adb $PREFIX/bin/adb
 ###
-echo "successfully installed"
+echo "Successfully Installed"
