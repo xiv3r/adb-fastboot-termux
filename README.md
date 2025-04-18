@@ -11,7 +11,7 @@ apt update && apt install wget -y && wget -qO- https://raw.githubusercontent.com
 ```
 <details><summary>
   
-# ADB output logs
+## ADB logs
 </summary>
 
 ```
@@ -185,7 +185,7 @@ Online documentation: https://android.googlesource.com/platform/packages/modules
 ```
 <details><summary>
 
-# Fastboot output logs
+## Fastboot logs
 </summary>
 
 ```sh
