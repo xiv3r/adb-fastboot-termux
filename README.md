@@ -3,7 +3,7 @@ Install adb and fastboot in termux without root privilege.
 
 # Requirements
 - Termux
-- Termux-API
+- [Termux-API](https://github.com/termux/termux-api/releases/download/v0.51.0/termux-api-app_v0.51.0+github.debug.apk)
 
 # Auto Install
 ```
