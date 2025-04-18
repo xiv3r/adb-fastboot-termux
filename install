@@ -13,7 +13,7 @@ EOF
 wget -O $PREFIX/etc/apt/trusted.gpg.d/nohajc.gpg https://nohajc.github.io/nohajc.gpg
 ### update new repo
 apt update
-apt install termux-adb -y
+apt install android-tools termux-adb -y
 ### symlinks
 ln -sf $PREFIX/bin/termux-fastboot $PREFIX/bin/fastboot && ln -sf $PREFIX/bin/termux-adb $PREFIX/bin/adb
 ###
