@@ -1,4 +1,4 @@
-# Termux adb and fastboot by `nohajc`
+# Termux adb and fastboot by [nohajc](https://github.com/nohajc)
 Install adb and fastboot in termux without root privilege.
 
 # Requirements
