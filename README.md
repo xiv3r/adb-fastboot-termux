@@ -8,7 +8,7 @@ Install adb and fastboot in termux without root privilege.
 
 # $${\color{violet}Auto- Install}$$
 ```
-apt update && apt install wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/adb-fastboot-termux/refs/heads/main/install | bash
+pkg update && pkg install wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/adb-fastboot-termux/refs/heads/main/install | bash
 ```
 <details><summary>
   
