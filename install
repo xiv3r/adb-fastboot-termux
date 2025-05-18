@@ -11,7 +11,7 @@ deb https://nohajc.github.io termux extras
 EOF
 
 # Download nohajc.gpg key
-wget -O $PREFIX/etc/apt/trusted.gpg.d/nohajc.gpg
+wget -O $PREFIX/etc/apt/trusted.gpg.d/nohajc.gpg https://github.com/xiv3r/adb-fastboot-termux/raw/refs/heads/main/nohajc.gpg
 
 # update repo
 pkg update
