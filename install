@@ -2,7 +2,7 @@
 
 pkg update
 pkg upgrade -y
-pkg install gnupg coreutils termux-api -y
+pkg install git gnupg coreutils termux-api -y
 
 # configure nohajc.gpg key
 mkdir -p $PREFIX/etc/apt/sources.list.d
@@ -20,3 +20,5 @@ pkg install android-tools termux-adb -y
 # symlinks adb and fastboot 
 ln -sf $PREFIX/bin/termux-fastboot $PREFIX/bin/fastboot
 ln -sf $PREFIX/bin/termux-adb $PREFIX/bin/adb
+
+git clone https://github.com/xiv3r/adb-fastboot-termux.git
