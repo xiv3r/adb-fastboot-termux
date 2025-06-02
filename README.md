@@ -1,18 +1,18 @@
-# $${\color{violet}Termux- ADB- and- Fastboot}$$
+# Termux ADB and Fastboot
 Install adb and fastboot in termux without root privilege.
 
 © [nohajc](https://github.com/nohajc)
-# $${\color{violet}Requirements}$$
+# Requirements
 - [Termux](https://github.com/termux/termux-app/releases/download/v0.118.2/termux-app_v0.118.2+github-debug_arm64-v8a.apk)
 - [Termux-API](https://github.com/termux/termux-api/releases/download/v0.51.0/termux-api-app_v0.51.0+github.debug.apk)
 
-# $${\color{violet}Auto- Install}$$
+# Auto Install
 ```
 pkg update && pkg install wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/adb-fastboot-termux/refs/heads/main/install | bash
 ```
 <details><summary>
   
-## $${\color{cyan}ADB- Logs}$$
+## ADB Logs
 </summary>
 
 ```
@@ -188,7 +188,7 @@ Online documentation: https://android.googlesource.com/platform/packages/modules
 
 <details><summary>
 
-## $${\color{cyan}Fastboot- Logs}$$
+## Fastboot Logs
 </summary>
 
 ```sh
