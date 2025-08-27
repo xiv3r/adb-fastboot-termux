@@ -1,5 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
+cd $HOME
+
+# Install required tools
 pkg update
 pkg upgrade -y
 pkg install git gnupg coreutils termux-api -y
@@ -10,7 +13,7 @@ cat > $PREFIX/etc/apt/sources.list.d/termux-adb.list << EOF
 deb https://nohajc.github.io termux extras
 EOF
 
-# Download nohajc.gpg key
+# Download gpg key
 wget -qO $PREFIX/etc/apt/trusted.gpg.d/nohajc.gpg https://github.com/xiv3r/adb-fastboot-termux/raw/refs/heads/main/nohajc.gpg
 
 # update repo
