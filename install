@@ -4,14 +4,14 @@ pkg update
 pkg upgrade -y
 pkg install git gnupg coreutils termux-api -y
 
-# configure nohajc.gpg key
+# configure gpg key
 mkdir -p $PREFIX/etc/apt/sources.list.d
 cat > $PREFIX/etc/apt/sources.list.d/termux-adb.list << EOF
 deb https://nohajc.github.io termux extras
 EOF
 
 # Download nohajc.gpg key
-wget -O $PREFIX/etc/apt/trusted.gpg.d/nohajc.gpg https://github.com/xiv3r/adb-fastboot-termux/raw/refs/heads/main/nohajc.gpg
+wget -qO $PREFIX/etc/apt/trusted.gpg.d/nohajc.gpg https://github.com/xiv3r/adb-fastboot-termux/raw/refs/heads/main/nohajc.gpg
 
 # update repo
 pkg update
@@ -21,4 +21,3 @@ pkg install android-tools termux-adb -y
 ln -sf $PREFIX/bin/termux-fastboot $PREFIX/bin/fastboot
 ln -sf $PREFIX/bin/termux-adb $PREFIX/bin/adb
 
-git clone https://github.com/xiv3r/adb-fastboot-termux.git
