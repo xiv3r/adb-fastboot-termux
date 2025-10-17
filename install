@@ -3,7 +3,7 @@
 cd $HOME
 
 # Install required tools
-pkg update
+apt update
 pkg upgrade -y
 pkg install git gnupg coreutils termux-api -y
 
@@ -17,7 +17,7 @@ EOF
 wget -qO $PREFIX/etc/apt/trusted.gpg.d/nohajc.gpg https://github.com/xiv3r/adb-fastboot-termux/raw/refs/heads/main/nohajc.gpg
 
 # update repo
-pkg update
+apt update
 pkg install android-tools termux-adb -y
 
 # symlinks adb and fastboot 
